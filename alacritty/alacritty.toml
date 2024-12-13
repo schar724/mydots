@@ -1,0 +1,21 @@
+[keyboard]
+bindings = [
+   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]
+
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/gnome_terminal.toml"
+]
+
+[[hints.enabled]]
+command = "nvim" # On Linux/BSD
+# command = "open" # On macOS
+# command = { program = "cmd", args = [ "/c", "start", "" ] } # On Windows
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "0", mods = "Control|Shift" }
+regex = '[^ ]*/[^/]+\.[[:alnum:]]+'
